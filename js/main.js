@@ -117,7 +117,7 @@ const productos = [
     {
         id: "Tentaciones-01",
         titulo: "Alfajor de chocolate",
-        imagen: "../img/pequeñas tentaciones/alfajor-chocolate-zoom.jpg",
+        imagen: "../img/pequenas-tentaciones/alfajor-chocolate-zoom.jpg",
         categoria: {
             nombre: "Pequeñas Tentaciones",
             id: "tentaciones"
@@ -127,7 +127,7 @@ const productos = [
     {
         id: "Tentaciones-02",
         titulo: "Alfajor de maicena",
-        imagen: "../img/pequeñas tentaciones/alfajor-maicena.jpg",
+        imagen: "../img/pequenas-tentaciones/alfajor-maicena.jpg",
         categoria: {
             nombre: "Pequeñas Tentaciones",
             id: "tentaciones"
@@ -137,7 +137,7 @@ const productos = [
     {
         id: "Tentaciones-03",
         titulo: "Alfajor de nuez",
-        imagen: "../img/pequeñas tentaciones/alfajor-nuez-zoom.jpg",
+        imagen: "../img/pequenas-tentaciones/alfajor-nuez-zoom.jpg",
         categoria: {
             nombre: "Pequeñas Tentaciones",
             id: "tentaciones"
@@ -147,7 +147,7 @@ const productos = [
     {
         id: "Tentaciones-04",
         titulo: "Bandeja de Masas",
-        imagen: "../img/pequeñas tentaciones/bandeja-de-masas-zoom.jpg",
+        imagen: "../img/pequenas-tentaciones/bandeja-de-masas-zoom.jpg",
         categoria: {
             nombre: " PequeñasTentaciones",
             id: "tentaciones"
@@ -157,7 +157,7 @@ const productos = [
     {
         id: "Tentaciones-05",
         titulo: "Cuadrado de brownie",
-        imagen: "../img/pequeñas tentaciones/brownie-zoom.jpg",
+        imagen: "../img/pequenas-tentaciones/brownie-zoom.jpg",
         categoria: {
             nombre: "Pequeñas Tentaciones",
             id: "tentaciones"
@@ -167,7 +167,7 @@ const productos = [
     {
         id: "Tentaciones-05",
         titulo: "Cuadrado de Coco",
-        imagen: "../img/pequeñas tentaciones/cuadrado-coco.jpg",
+        imagen: "../img/pequenas-tentaciones/cuadrado-coco.jpg",
         categoria: {
             nombre: "Pequeñas Tentaciones",
             id: "tentaciones"
