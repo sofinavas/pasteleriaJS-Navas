@@ -4,7 +4,7 @@ const productos = [
     {
         id: "torta-01",
         titulo: "Chaja",
-        imagen: "../img/Tortas/chaja-entera.jpg",
+        imagen: "./img/Tortas/chaja-entera.jpg",
         categoria: {
             nombre: "Tortas",
             id: "tortas"
@@ -14,7 +14,7 @@ const productos = [
     {
         id: "torta-02",
         titulo: "Cheesecake",
-        imagen: "../img/Tortas/cheesecake-entera.jpg",
+        imagen: "./img/Tortas/cheesecake-entera.jpg",
         categoria: {
             nombre: "Tortas",
             id: "tortas"
@@ -24,7 +24,7 @@ const productos = [
     {
         id: "torta-03",
         titulo: "Concorde",
-        imagen: "../img/Tortas/concorde-zoom.jpg",
+        imagen: "./img/Tortas/concorde-zoom.jpg",
         categoria: {
             nombre: "Tortas",
             id: "tortas"
@@ -34,7 +34,7 @@ const productos = [
     {
         id: "torta-04",
         titulo: "Marquise",
-        imagen: "../img/Tortas/marquise-entera.jpg",
+        imagen: "./img/Tortas/marquise-entera.jpg",
         categoria: {
             nombre: "Tortas",
             id: "tortas"
@@ -44,7 +44,7 @@ const productos = [
     {
         id: "torta-05",
         titulo: "Milhojas",
-        imagen: "../img/Tortas/milhojas-zoom.jpg",
+        imagen: "./img/Tortas/milhojas-zoom.jpg",
         categoria: {
             nombre: "Tortas",
             id: "tortas"
@@ -55,7 +55,7 @@ const productos = [
     {
         id: "torta-06",
         titulo: "Pavlova",
-        imagen: "../img/Tortas/pavlova-entera.jpg",
+        imagen: "./img/Tortas/pavlova-entera.jpg",
         categoria: {
             nombre: "Tortas",
             id: "tortas"
@@ -66,7 +66,7 @@ const productos = [
     {
         id: "Tarta-01",
         titulo: "Tarta Beni",
-        imagen: "../img/Tartas/beni-zoom.jpg",
+        imagen: "./img/Tartas/beni-zoom.jpg",
         categoria: {
             nombre: "Tartas",
             id: "tartas"
@@ -76,7 +76,7 @@ const productos = [
     {
         id: "Tarta-02",
         titulo: "Tarta de frutillas",
-        imagen: "../img/Tartas/frutillas-entera.jpg",
+        imagen: "./img/Tartas/frutillas-entera.jpg",
         categoria: {
             nombre: "Tartas",
             id: "tartas"
@@ -86,7 +86,7 @@ const productos = [
     {
         id: "Tarta-03",
         titulo: "Tarta de Maracuya",
-        imagen: "../img/Tartas/maracuya-zoom.jpg",
+        imagen: "./img/Tartas/maracuya-zoom.jpg",
         categoria: {
             nombre: "Tartas",
             id: "tartas"
@@ -96,7 +96,7 @@ const productos = [
     {
         id: "Tarta-04",
         titulo: "Pasta frolla",
-        imagen: "../img/Tartas/pasta-frolla-zoom.jpg",
+        imagen: "./img/Tartas/pasta-frolla-zoom.jpg",
         categoria: {
             nombre: "Tartas",
             id: "tartas"
@@ -106,7 +106,7 @@ const productos = [
     {
         id: "Tarta-05",
         titulo: "Peras y Almendras",
-        imagen: "../img/Tartas/peras-almendras.jpg",
+        imagen: "./img/Tartas/peras-almendras.jpg",
         categoria: {
             nombre: "Tartas",
             id: "tartas"
@@ -117,7 +117,7 @@ const productos = [
     {
         id: "Tentaciones-01",
         titulo: "Alfajor de chocolate",
-        imagen: "../img/pequenas-tentaciones/alfajor-chocolate-zoom.jpg",
+        imagen: "./img/pequenas-tentaciones/alfajor-chocolate-zoom.jpg",
         categoria: {
             nombre: "Pequeñas Tentaciones",
             id: "tentaciones"
@@ -127,7 +127,7 @@ const productos = [
     {
         id: "Tentaciones-02",
         titulo: "Alfajor de maicena",
-        imagen: "../img/pequenas-tentaciones/alfajor-maicena.jpg",
+        imagen: "./img/pequenas-tentaciones/alfajor-maicena.jpg",
         categoria: {
             nombre: "Pequeñas Tentaciones",
             id: "tentaciones"
@@ -137,7 +137,7 @@ const productos = [
     {
         id: "Tentaciones-03",
         titulo: "Alfajor de nuez",
-        imagen: "../img/pequenas-tentaciones/alfajor-nuez-zoom.jpg",
+        imagen: "./img/pequenas-tentaciones/alfajor-nuez-zoom.jpg",
         categoria: {
             nombre: "Pequeñas Tentaciones",
             id: "tentaciones"
@@ -147,7 +147,7 @@ const productos = [
     {
         id: "Tentaciones-04",
         titulo: "Bandeja de Masas",
-        imagen: "../img/pequenas-tentaciones/bandeja-de-masas-zoom.jpg",
+        imagen: "./img/pequenas-tentaciones/bandeja-de-masas-zoom.jpg",
         categoria: {
             nombre: " PequeñasTentaciones",
             id: "tentaciones"
@@ -157,7 +157,7 @@ const productos = [
     {
         id: "Tentaciones-05",
         titulo: "Cuadrado de brownie",
-        imagen: "../img/pequenas-tentaciones/brownie-zoom.jpg",
+        imagen: "./img/pequenas-tentaciones/brownie-zoom.jpg",
         categoria: {
             nombre: "Pequeñas Tentaciones",
             id: "tentaciones"
@@ -167,7 +167,7 @@ const productos = [
     {
         id: "Tentaciones-05",
         titulo: "Cuadrado de Coco",
-        imagen: "../img/pequenas-tentaciones/cuadrado-coco.jpg",
+        imagen: "./img/pequenas-tentaciones/cuadrado-coco.jpg",
         categoria: {
             nombre: "Pequeñas Tentaciones",
             id: "tentaciones"
