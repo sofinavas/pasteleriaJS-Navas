@@ -1,180 +1,11 @@
-// PRODUCTOS
-const productos = [
-    // Tortas
-    {
-        id: "torta-01",
-        titulo: "Chaja",
-        imagen: "./img/Tortas/chaja-entera.jpg",
-        categoria: {
-            nombre: "Tortas",
-            id: "tortas"
-        },
-        precio: 8000
-    },
-    {
-        id: "torta-02",
-        titulo: "Cheesecake",
-        imagen: "./img/Tortas/cheesecake-entera.jpg",
-        categoria: {
-            nombre: "Tortas",
-            id: "tortas"
-        },
-        precio: 7000
-    },
-    {
-        id: "torta-03",
-        titulo: "Concorde",
-        imagen: "./img/Tortas/concorde-zoom.jpg",
-        categoria: {
-            nombre: "Tortas",
-            id: "tortas"
-        },
-        precio: 9000
-    },
-    {
-        id: "torta-04",
-        titulo: "Marquise",
-        imagen: "./img/Tortas/marquise-entera.jpg",
-        categoria: {
-            nombre: "Tortas",
-            id: "tortas"
-        },
-        precio: 9000
-    },
-    {
-        id: "torta-05",
-        titulo: "Milhojas",
-        imagen: "./img/Tortas/milhojas-zoom.jpg",
-        categoria: {
-            nombre: "Tortas",
-            id: "tortas"
-        },
-        precio: 10000
-    },
+let productos = [];
 
-    {
-        id: "torta-06",
-        titulo: "Pavlova",
-        imagen: "./img/Tortas/pavlova-entera.jpg",
-        categoria: {
-            nombre: "Tortas",
-            id: "tortas"
-        },
-        precio: 7000
-    },
-    //Tartas
-    {
-        id: "Tarta-01",
-        titulo: "Tarta Beni",
-        imagen: "./img/Tartas/beni-zoom.jpg",
-        categoria: {
-            nombre: "Tartas",
-            id: "tartas"
-        },
-        precio: 6000
-    },
-    {
-        id: "Tarta-02",
-        titulo: "Tarta de frutillas",
-        imagen: "./img/Tartas/frutillas-entera.jpg",
-        categoria: {
-            nombre: "Tartas",
-            id: "tartas"
-        },
-        precio: 7000
-    },
-    {
-        id: "Tarta-03",
-        titulo: "Tarta de Maracuya",
-        imagen: "./img/Tartas/maracuya-zoom.jpg",
-        categoria: {
-            nombre: "Tartas",
-            id: "tartas"
-        },
-        precio: 8000
-    },
-    {
-        id: "Tarta-04",
-        titulo: "Pasta frolla",
-        imagen: "./img/Tartas/pasta-frolla-zoom.jpg",
-        categoria: {
-            nombre: "Tartas",
-            id: "tartas"
-        },
-        precio: 6000
-    },
-    {
-        id: "Tarta-05",
-        titulo: "Peras y Almendras",
-        imagen: "./img/Tartas/peras-almendras.jpg",
-        categoria: {
-            nombre: "Tartas",
-            id: "tartas"
-        },
-        precio: 7000
-    },
-    //Pequeñas tentaciones
-    {
-        id: "Tentaciones-01",
-        titulo: "Alfajor de chocolate",
-        imagen: "./img/pequenas-tentaciones/alfajor-chocolate-zoom.jpg",
-        categoria: {
-            nombre: "Pequeñas Tentaciones",
-            id: "tentaciones"
-        },
-        precio: 500
-    },
-    {
-        id: "Tentaciones-02",
-        titulo: "Alfajor de maicena",
-        imagen: "./img/pequenas-tentaciones/alfajor-maicena.jpg",
-        categoria: {
-            nombre: "Pequeñas Tentaciones",
-            id: "tentaciones"
-        },
-        precio: 500
-    },
-    {
-        id: "Tentaciones-03",
-        titulo: "Alfajor de nuez",
-        imagen: "./img/pequenas-tentaciones/alfajor-nuez-zoom.jpg",
-        categoria: {
-            nombre: "Pequeñas Tentaciones",
-            id: "tentaciones"
-        },
-        precio: 500
-    },
-    {
-        id: "Tentaciones-04",
-        titulo: "Bandeja de Masas",
-        imagen: "./img/pequenas-tentaciones/bandeja-de-masas-zoom.jpg",
-        categoria: {
-            nombre: " PequeñasTentaciones",
-            id: "tentaciones"
-        },
-        precio: 10000
-    },
-    {
-        id: "Tentaciones-05",
-        titulo: "Cuadrado de brownie",
-        imagen: "./img/pequenas-tentaciones/brownie-zoom.jpg",
-        categoria: {
-            nombre: "Pequeñas Tentaciones",
-            id: "tentaciones"
-        },
-        precio: 500
-    },
-    {
-        id: "Tentaciones-05",
-        titulo: "Cuadrado de Coco",
-        imagen: "./img/pequenas-tentaciones/cuadrado-coco.jpg",
-        categoria: {
-            nombre: "Pequeñas Tentaciones",
-            id: "tentaciones"
-        },
-        precio: 500
-    },
-];
+fetch("./js/productos.json")
+    .then(response => response.json())
+    .then(data=>{
+        productos = data;
+        cargarProductos(productos);
+    })
 
 const contenedorProductos = document.querySelector('#contenedorProductos');
 const botonesCategorias = document.querySelectorAll('.boton-categoria');
@@ -206,7 +37,7 @@ function cargarProductos(productosElegidos) {
     })
     actualizarBotonesAgregar();
 }
-cargarProductos(productos);
+
 
 botonesCategorias.forEach(boton=>{
     boton.addEventListener('click', (e)=>{
@@ -247,6 +78,21 @@ if(productosEnCarritoLS){
 
 
 function agregarAlCarrito(e){
+    Toastify({
+        text: "Producto agregado",
+        duration: 3000,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            background: "linear-gradient(to right, #c34262, rgba(248, 244, 244, 0.8))",
+            borderRadius: "1.5rem",
+            textTransform: "uppercase",
+            fontSize: ".75rem",
+        },
+        onClick: function(){} // Callback after click
+    }).showToast();
 
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
