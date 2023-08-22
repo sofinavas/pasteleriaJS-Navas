@@ -14,7 +14,7 @@ let botonesAgregar = document.querySelectorAll('producto-agregar');
 const numerito = document.querySelector('#numerito');
 
 botonesCategorias.forEach(boton => boton.addEventListener('click', ()=> {
-    MediaStreamAudioDestinationNode.classList.remove('aside-visible');
+    aside.classList.remove('aside-visible');
 }))
 
 function cargarProductos(productosElegidos) {
